@@ -1,0 +1,23 @@
+
+.hg-10{
+    height: 10vh;
+}
+.hg-15{
+    height: 15vh;
+}
+.hg-75{
+    height: 75vh;
+}
+header{
+    height: 15%;
+}
+main{
+    height: 75%;
+}
+footer{
+    height: 10%;
+}
+.bold{
+    font-weight: 500;
+    font-size: 16px;
+}

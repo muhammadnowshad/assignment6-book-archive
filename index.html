@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,30 +11,73 @@
     <!-- My CSS Style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-
     <!-- Header Area Start -->
-    <Header>
-
+    <Header class="">
+        <!-- Navber Start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#"><span class="fw-bolder fs-3">My Book</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-3 fs-6">
+                        <li class="nav-item pe-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link active" aria-current="page" href="#">Books</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link active" aria-current="page" href="#">Subjects</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link active" aria-current="page" href="#">Collections</a>
+                        </li>
+                    </ul>
+                    <input class="btn btn-danger px-4 py-2" type="submit" value="Login">
+                </div>
+            </div>
+        </nav>
+        <!-- Navber End -->
     </Header>
     <!-- Header Area End -->
 
     <!-- Main Area Start -->
-    <main>
-        <h1 class="bg-dark text-white">Book Archive API</h1>
+    <main class="container">
+        <h2 class="text-center my-4">Search Your Favourite Books</h2>
+        <!-- Search Araea -->
+        <div class="input-group mb-4 w-50 ms-auto container">
+            <input id="searchField" type="text" class="form-control py-2" placeholder="Search books by name" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+            <button onclick="searchBook()" class="btn btn-outline-danger px" type="button" id="button-search">Search</button>
+        </div>
+
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+               <!-- <img src="https://covers.openlibrary.org/b/id/${cover_i}-M.jpg" class="card-img-top" alt="..."> -->
+            </div>
+        </div>
     </main>
     <!-- Main Area End -->
 
     <!-- Footer Area Start -->
-    <footer>
-
+    <footer class="">
+        <div class="bg-primary">
+            <h6 class="text-center  m-0 py-4 text-white">Copyright © 2021 My Book</h6>
+        </div>
     </footer>
     <!-- Footer Area End -->
-    
+
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- My Script -->
     <script src="js/script-api.js"></script>
 </body>
+
 </html>
