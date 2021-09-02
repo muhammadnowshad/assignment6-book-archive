@@ -48,21 +48,34 @@
     <!-- Header Area End -->
 
     <!-- Main Area Start -->
-    <main class="container">
-        <h2 class="text-center mt-5 mb-4">Search Your Favourite Books</h2>
-        <!-- Search Araea -->
-        <div class="input-group mb-2 w-50 container">
-            <input id="searchField" type="text" class="form-control py-2" placeholder="Search books by name" aria-label="Recipient's username"
-            aria-describedby="button-addon2">
-            <button onclick="searchBook()" class="search-text btn btn-outline-danger px" type="button" id="button-search">Search</button>
-        </div>
+    <main class="container main">
+        <!-- Search Araea Start  -->
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <h2 class="text-center mt-5 mb-4">Search Your Favourite Books</h2>
+                    <div class="input-group mb-2">
+                        <input id="searchField" type="text" class="form-control py-2" placeholder="Search books by name" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button onclick="searchBook()" class="search-text btn btn-danger px" type="button" id="button-search">Search</button>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        <!-- Search Araea End  -->
+
+        <!-- Search Result Number Count  -->
         <div id="resultCount" class="w-50 container">
 
         </div>
-
-        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 mb-5 mt-2">
+        <!-- Erorr Show -->
+        <div id="erorr" class="p-2">
 
         </div>
+        <!-- Image, Author Area start -->
+        <div id="search-result" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5 mt-2">
+
+        </div>
+        <!-- Image, Author Area End -->
     </main>
     <!-- Main Area End -->
 
