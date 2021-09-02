@@ -1,8 +1,19 @@
 /* default style */
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
 .bold{
     font-weight: 500;
     font-size: 16px;
 }
 .count, .search-text{
     font-weight: 500;
+}
+footer{
+    margin-top: auto;
 }
