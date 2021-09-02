@@ -9,11 +9,19 @@ const searchBook = () => {
     const url = `https://openlibrary.org/search.json?q=${searchText}`;
     fetch(url)
     .then(res => res.json())
-    .then(data => displaySearchResult(data.docs))
+    .then(data => displaySearchResult(data))
+    // .then(data => console.log(data))
 }
 
-const displaySearchResult = docs => {
-    // console.log(data)
+const displaySearchResult = data => {
+    // console.log(data.numFound)
+    const resultCount = data.numFound;
+    const countDiv = document.getElementById('resultCount');
+    countDiv.innerHTML = `
+    <p class="text-center count m-0 text-danger">About ${resultCount} results</p>
+    `
+    // console.log(data.docs)
+    const docs = data.docs
     const searchResult = document.getElementById('search-result');
     docs.forEach(doc => {
         console.log(doc)

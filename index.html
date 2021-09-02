@@ -49,18 +49,19 @@
 
     <!-- Main Area Start -->
     <main class="container">
-        <h2 class="text-center my-4">Search Your Favourite Books</h2>
+        <h2 class="text-center mt-5 mb-4">Search Your Favourite Books</h2>
         <!-- Search Araea -->
-        <div class="input-group mb-4 w-50 ms-auto container">
+        <div class="input-group mb-2 w-50 container">
             <input id="searchField" type="text" class="form-control py-2" placeholder="Search books by name" aria-label="Recipient's username"
             aria-describedby="button-addon2">
-            <button onclick="searchBook()" class="btn btn-outline-danger px" type="button" id="button-search">Search</button>
+            <button onclick="searchBook()" class="search-text btn btn-outline-danger px" type="button" id="button-search">Search</button>
+        </div>
+        <div id="resultCount" class="w-50 container">
+
         </div>
 
-        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-               <!-- <img src="https://covers.openlibrary.org/b/id/${cover_i}-M.jpg" class="card-img-top" alt="..."> -->
-            </div>
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 mb-5 mt-2">
+
         </div>
     </main>
     <!-- Main Area End -->
