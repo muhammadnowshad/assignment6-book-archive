@@ -7,6 +7,7 @@ const searchBook = () => {
 
     //erorr handle
     const erorr = document.getElementById('erorr');
+    // clear field
     erorr.textContent = '';
     if (searchText === ''){
         erorr.innerHTML = `
@@ -26,6 +27,7 @@ const displaySearchResult = data => {
     // search result count 
     const resultCount = data.numFound;
     const countDiv = document.getElementById('resultCount');
+    //clear field
     countDiv.textContent = '';
     countDiv.innerHTML = `
     <p class="text-center count m-0 text-danger">About ${resultCount} results</p>
